@@ -1,32 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import './App.css'
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <h1>Mi To-Do List</h1>
 
-      <div>
+      <div className="form">
         <input type="text" placeholder="Agregar tarea..." />
         <button>ADD</button>
       </div>
 
-      <ul>
-        <li>
+      <ul className="list">
+        <li className="item">
           <input type="checkbox" />
           <span>Tarea 1</span>
           <button>Eliminar</button>
         </li>
 
-        <li>
+        <li className="item">
           <input type="checkbox" />
           <span>Tarea 2</span>
           <button>Eliminar</button>
         </li>
 
-        <li>
+        <li className="item">
           <input type="checkbox" />
           <span>Tarea 3</span>
           <button>Eliminar</button>
